@@ -37,7 +37,7 @@ return(
         </div>
         <div className="flex flex-col p-10 jusfify-center items-end gap-10  py-3 px-6 my-3 text-2xl">
         {links.map((el,idx)=>(
-            <a key={idx} href="">{el}</a>
+            <a key={idx} href="" className=" border-b-2 border-white ">{el}</a>
         ))}
 
         </div>
