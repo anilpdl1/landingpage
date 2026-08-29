@@ -12,9 +12,13 @@ function Navbar(){
     const links=['Features','About','Pricing'];
 return(
     <nav className="mx-auto max-w-6xl   px-6 py-3 flex justify-between items-center my-2  ">
-       <div className="">
-        <FaGithub className="text-5xl text-primary"/>
-       </div>
+       <div className="h-full w-20 rounded-2xl bg-background overflow-hidden">
+  <img
+    src="/logo.jpg"
+    alt="Chelsea boots logo"
+    className="h-full w-full object-contain mix-blend-multiply"
+  />
+</div>
        <div className="w-2/3 hidden md:flex justify-around  text-xl font-sans ">
         <a href="">
         Features
