@@ -11,26 +11,26 @@ function Navbar(){
     }
     const links=['Features','About','Pricing'];
 return(
-    <nav className="mx-auto max-w-6xl   px-6 py-3 flex justify-between items-center my-5  ">
+    <nav className="mx-auto max-w-6xl   px-6 py-3 flex justify-between items-center my-2  ">
        <div className="">
         <FaGithub className="text-5xl text-primary"/>
        </div>
-       <div className="w-2/3 hidden md:flex justify-between   ">
+       <div className="w-2/3 hidden md:flex justify-around  text-xl font-sans ">
         <a href="">
-        features
+        Features
         </a>
-        <a href="">pricing</a>
+        <a href="">Pricing</a>
         <a href="">
         About
         </a>
-        <Button/>
+        <Button text="Login"/>
        </div>
         <button onClick={()=>setOpen(true)} className="md:hidden">
        <Menu size={30}/>
        </button>
-        <div className={`flex flex-col  fixed top-0 w-[65%] right-0 h-2/3 bg-accent transition-all ease-out ${Isopen?  "translate-x-0":"translate-x-full"}`}>
+        <div className={`flex flex-col z-50  fixed top-0 w-[65%] right-0 h-2/3 bg-accent transition-all ease-out ${Isopen?  "translate-x-0":"translate-x-full"}`}>
         <div className="flex justify-between mt-5 py-3 px-6 text-3xl">
-        <Button/>
+        <Button text="Login"/>
         <button onClick={closeMenu}>
             <X size={30}/>
         </button>
@@ -39,7 +39,6 @@ return(
         {links.map((el,idx)=>(
             <a key={idx} href="" className=" border-b-2 border-white ">{el}</a>
         ))}
-
         </div>
         </div>
     </nav>
