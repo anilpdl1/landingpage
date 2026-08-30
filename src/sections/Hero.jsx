@@ -62,7 +62,7 @@ function Hero() {
             className="relative"
           >
             {/* Glow */}
-            <div className="absolute inset-2 rounded-2xl bg-primary/20 blur-3xl" />
+            <div className="absolute -inset-2 rounded-2xl bg-primary/20 blur-3xl" />
 
             {/* Image */}
             <div className="relative h-40 w-40 sm:h-44 sm:w-44 md:h-52 md:w-52 lg:h-60 lg:w-60 overflow-hidden rounded-2xl border-4 border-white shadow-2xl">

@@ -26,7 +26,7 @@ return(
          <a href="#about">
         About
         </a>
-        <a href="">Pricing</a>
+        <a href="#pricing">Pricing</a>
        
         <Button text="Login"/>
        </div>

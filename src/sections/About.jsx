@@ -5,7 +5,7 @@ function About() {
   return (
     <section
       id="about"
-      className="min-h-screen px-6 py-20 flex flex-col justify-center items-center gap-16"
+      className="min-h-screen px-6 py-10 flex flex-col justify-center items-center gap-16"
     >
       {/* Section Heading */}
       <motion.div
