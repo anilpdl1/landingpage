@@ -12,10 +12,10 @@ function Hero() {
   ];
 
   return (
-    <main className="min-h-[calc(100vh-4rem)] flex flex-col items-center justify-start px-6 py-7 overflow-hidden">
+    <main className="min-h-[calc(100vh-4rem)] md:min-h-[calc(100vh-4rem)] flex flex-col items-center justify-start px-6 py-7 overflow-hidden">
       
       {/* Heading */}
-      <div className="w-full max-w-6xl mb-8 md:mb-10">
+      <div className="w-full max-w-6xl mb-5 md:mb-10">
         <motion.p
           className="text-lg md:text-xl font-serif text-gray-500 mb-1"
           initial={{ opacity: 0, x: -30 }}

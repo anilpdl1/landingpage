@@ -20,7 +20,7 @@ return(
   />
 </div>
        <div className="w-2/3 hidden md:flex justify-around  text-xl font-sans ">
-        <a href="">
+        <a href="#features">
         Features
         </a>
         <a href="">Pricing</a>
