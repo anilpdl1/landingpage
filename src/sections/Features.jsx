@@ -29,13 +29,14 @@ return(
         <div className="w-full max-w-6xl mb:8 ">
             <p className="text-4xl font-serif text-center font-bold">Why Chelsea?</p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2  gap-4">
             {features.map((el,idx)=>(
                 <motion.div
                 initial={{x:idx%2==0?-100:100,scale:0.9,opacity:0}}
                 whileInView={{x:0,opacity:1,scale:1}}
                 transition={{duration:0.8,delay:0.2+idx*0.2}}
-                className="p-5 flex flex-col items-start  bg-accent/70 justify-center gap-5 max-60 h-60 border-white border-2 rounded-2xl backdrop:backdrop-blur-2xl shadow-olive-50 hover:scale-105 transition-all ease-in-out " key={idx}>
+                viewport={{ once: true, amount: 0.2 }}
+                className="p-5 flex flex-col items-start  bg-accent/70 justify-center gap-5 max-60 h-60 border-white border-2 rounded-2xl backdrop-blur-2xl shadow-olive-50 hover:scale-105 transition-all ease-in-out " key={idx}>
                 <p className="text-3xl">{el.icon}</p>
                 <p className="self-start text-xl">{el.title}</p>
                 <p className="text-sm  overflow-x-clip">{el.description}</p>

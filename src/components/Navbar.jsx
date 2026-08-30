@@ -23,10 +23,11 @@ return(
         <a href="#features">
         Features
         </a>
-        <a href="">Pricing</a>
-        <a href="">
+         <a href="#about">
         About
         </a>
+        <a href="">Pricing</a>
+       
         <Button text="Login"/>
        </div>
         <button onClick={()=>setOpen(true)} className="md:hidden">
